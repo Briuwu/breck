@@ -1,8 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Breck's Car Rental - Vehicle Partnership Program
+
+A modern Next.js web application for Breck's Car Rental, showcasing our Vehicle Partnership Program and car rental services in the Philippines.
+
+## About Breck's Car Rental
+
+Breck's Car Rental is committed to providing reliable, affordable, and transparent car rental services in the Philippines. Our Vehicle Partnership Program allows vehicle owners to earn passive income while we professionally manage their cars.
+
+### Key Features
+
+- **Vehicle Partnership Program**: Earn 75% of net rental income
+- **Transparent Revenue Sharing**: Clear breakdown of income, expenses, and deductions
+- **Professional Management**: We handle operations, maintenance monitoring, and client screening
+- **Flexible Rental Rates**: ₱2,000 (12 hours), ₱2,700 (24 hours), with additional charges for extended use
+- **Comprehensive Coverage**: Insurance, registration, and liability management
+- **Real-time Monitoring**: Track rentals, income, and vehicle status through our system
+
+### Partnership Benefits
+
+- **75% Revenue Share** for vehicle owners
+- **Hassle-free Operations** - we manage everything
+- **Regular Reporting** - daily, weekly, or monthly reports
+- **Insurance Protection** - comprehensive coverage for all vehicles
+- **Client Liability** - renters are responsible for damages and violations
 
 ## Getting Started
 
-First, run the development server:
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+### Prerequisites
+
+- Node.js 18+
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Briuwu/breck.git
+cd breck
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
@@ -14,11 +65,53 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/` - Next.js app router pages and layouts
+- `components/` - Reusable UI components
+  - `landing/` - Landing page sections
+  - `ui/` - Shadcn/ui components
+- `hooks/` - Custom React hooks
+- `lib/` - Utility functions and configurations
+- `public/` - Static assets
+
+## Technologies Used
+
+- **Next.js 15** - React framework with App Router
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **Shadcn/ui** - Modern UI components
+- **Framer Motion** - Animation library
+
+## Business Terms
+
+### Revenue Sharing
+
+- Owner: 75% of net rental income
+- Operator: 25% management fee
+- Deductions: Delivery fees and expenses (if applicable)
+
+### Rental Rates
+
+- ₱2,000 for 12 hours
+- ₱2,700 for 24 hours
+- Additional charges for extended hours, excess mileage, out-of-town trips
+
+### Client Responsibilities
+
+- Fuel and toll fees
+- Delivery fees (₱300-₱500)
+- Liability for damages, violations, and accidents
+
+## Contact
+
+For partnership inquiries or more information about Breck's Car Rental Vehicle Partnership Program:
+
+- **Website**: [breck-car-rental.com](https://breck-car-rental.com) (placeholder)
+- **Email**: info@breckcarrental.com (placeholder)
+- **Phone**: Contact us for details
 
 ## Learn More
 
@@ -26,8 +119,6 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
