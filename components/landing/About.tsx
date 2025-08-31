@@ -17,7 +17,7 @@ export function About() {
 
   return (
     <motion.section
-      className="py-16 px-4 bg-white dark:bg-gray-900"
+      className="py-16 px-4bg-gray-900"
       initial="hidden"
       whileInView="show"
       viewport={defaultViewport}
@@ -25,10 +25,10 @@ export function About() {
     >
       <div className="max-w-6xl mx-auto">
         <motion.div variants={item} className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
             <TextEffect per="word">About Breck’s Car Rental</TextEffect>
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg max-w-3xl mx-auto text-muted-foreground">
             A growing rental service providing affordable, safe, and reliable
             cars to clients across the Philippines.
           </p>
@@ -42,7 +42,7 @@ export function About() {
                 <CardTitle>Transparency</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-muted-foreground">
                   Clear reporting of rentals, income, and expenses for full
                   visibility.
                 </p>
@@ -57,7 +57,7 @@ export function About() {
                 <CardTitle>Security</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-muted-foreground">
                   Rigorous client screening to minimize risks and ensure safety.
                 </p>
               </CardContent>
@@ -71,7 +71,7 @@ export function About() {
                 <CardTitle>Convenience</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-muted-foreground">
                   We handle operations so you can focus on earning passive
                   income.
                 </p>
@@ -81,11 +81,11 @@ export function About() {
         </AnimatedGroup>
 
         <motion.div variants={item} className="mt-12 text-center">
-          <blockquote className="text-xl italic text-gray-700 dark:text-gray-200">
+          <blockquote className="text-xl italic text-muted">
             “To provide clients with quality rentals while giving vehicle owners
             a worry-free income opportunity.”
           </blockquote>
-          <p className="mt-4 text-gray-500 dark:text-gray-400">— Our Mission</p>
+          <p className="mt-4 text-muted-foreground">— Our Mission</p>
         </motion.div>
       </div>
     </motion.section>

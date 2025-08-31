@@ -16,20 +16,19 @@ export function Legal() {
 
   return (
     <motion.section
-      className="py-16 px-4 bg-white dark:bg-gray-900"
+      className="py-16 px-4 bg-gray-900"
       initial="hidden"
       whileInView="show"
       viewport={defaultViewport}
       variants={container}
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <motion.div variants={item} className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Risk Management & Legal
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Legal Information
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Protecting your interests with comprehensive coverage and legal
-            safeguards.
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+            Important legal details about our vehicle partnership program
           </p>
         </motion.div>
 
@@ -46,7 +45,7 @@ export function Legal() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="font-semibold mb-2">Owner Responsibilities</h3>
-                  <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+                  <ul className="space-y-2 text-gray-300">
                     <li>• Maintain updated LTO registration</li>
                     <li>• Comprehensive insurance coverage</li>
                     <li>• Process insurance claims with Operator assistance</li>
@@ -54,7 +53,7 @@ export function Legal() {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-2">Claim Process</h3>
-                  <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+                  <ul className="space-y-2 text-gray-300">
                     <li>• Insurance claims filed immediately</li>
                     <li>• Clients shoulder deductibles & fees</li>
                     <li>• Operator assists with documentation</li>
@@ -75,13 +74,13 @@ export function Legal() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
+              <p className="text-gray-300 mb-4">
                 Owner shall issue an SPA to Maria Leonela M. Lasala authorizing
                 representation before government authorities in matters relating
                 to the vehicle.
               </p>
-              <div className="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg">
-                <p className="text-sm text-yellow-800 dark:text-yellow-200">
+              <div className="bg-yellow-900/20 p-4 rounded-lg">
+                <p className="text-sm text-yellow-200">
                   <strong>Note:</strong> SPA does not cover authority to sell or
                   mortgage the vehicle.
                 </p>
@@ -100,7 +99,7 @@ export function Legal() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-300">
                 Neither party shall be liable for failure/delay caused by events
                 beyond control (typhoons, earthquakes, floods, fire, war,
                 terrorism, pandemics, strikes, etc.). Parties shall inform each
@@ -121,13 +120,13 @@ export function Legal() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
+              <p className="text-gray-300 mb-4">
                 Any dispute shall first be settled amicably. If unresolved,
                 submitted to mediation or arbitration in accordance with
                 Philippine laws.
               </p>
-              <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-                <p className="text-sm text-blue-800 dark:text-blue-200">
+              <div className="bg-blue-900/20 p-4 rounded-lg">
+                <p className="text-sm text-blue-200">
                   <strong>Termination:</strong> Either party may terminate with
                   30 days&apos; written notice. Breach allows immediate
                   termination and legal remedies.

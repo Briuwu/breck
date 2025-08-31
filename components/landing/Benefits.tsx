@@ -27,7 +27,7 @@ export function Benefits() {
 
   return (
     <motion.section
-      className="py-16 px-4 bg-white dark:bg-gray-900"
+      className="py-16 px-4 bg-gray-900"
       initial="hidden"
       whileInView="show"
       viewport={defaultViewport}
@@ -35,10 +35,10 @@ export function Benefits() {
     >
       <div className="max-w-6xl mx-auto">
         <motion.div variants={item} className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Benefits for Owners
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
             Enjoy steady passive income with peace of mind through our
             professional management.
           </p>
@@ -48,19 +48,13 @@ export function Benefits() {
           <MotionTabsList
             variants={item}
             animate="show"
-            className="grid w-full grid-cols-2 mb-8 gap-2 bg-(--popover) rounded-md p-1"
+            className="bg-gray-800 border border-gray-700 mx-auto p-2 h-auto mb-5"
           >
-            <TabsTrigger
-              value="owners"
-              className="w-full px-4 py-3 text-sm rounded-md text-(--muted-foreground) data-[state=active]:bg-(--primary) data-[state=active]:text-(--primary-foreground) data-[state=active]:shadow-sm"
-            >
+            <TabsTrigger value="owners" className="md:w-96 py-3">
               Owner Benefits
             </TabsTrigger>
 
-            <TabsTrigger
-              value="operators"
-              className="w-full px-4 py-3 text-sm rounded-md text-(--muted-foreground) data-[state=active]:bg-(--primary) data-[state=active]:text-(--primary-foreground) data-[state=active]:shadow-sm"
-            >
+            <TabsTrigger value="operators" className="md:w-96 py-3">
               Operator Details
             </TabsTrigger>
           </MotionTabsList>
@@ -73,13 +67,15 @@ export function Benefits() {
           >
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <motion.div variants={item}>
-                <Card>
+                <Card className="bg-gray-800 border-gray-700 hover:border-gray-600 transition-colors">
                   <CardHeader>
                     <DollarSign className="h-10 w-10 text-cta-orange mb-2" />
-                    <CardTitle>75% Income Share</CardTitle>
+                    <CardTitle className="text-white">
+                      75% Income Share
+                    </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-300">
                       Majority share of net rental income, maximizing your ROI.
                     </p>
                   </CardContent>
@@ -87,13 +83,15 @@ export function Benefits() {
               </motion.div>
 
               <motion.div variants={item}>
-                <Card>
+                <Card className="bg-gray-800 border-gray-700 hover:border-gray-600 transition-colors">
                   <CardHeader>
                     <Clock className="h-10 w-10 text-accent-blue mb-2" />
-                    <CardTitle>Hassle-Free Operations</CardTitle>
+                    <CardTitle className="text-white">
+                      Hassle-Free Operations
+                    </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-300">
                       We handle marketing, rentals, and maintenance—you just
                       earn.
                     </p>
@@ -102,13 +100,15 @@ export function Benefits() {
               </motion.div>
 
               <motion.div variants={item}>
-                <Card>
+                <Card className="bg-gray-800 border-gray-700 hover:border-gray-600 transition-colors">
                   <CardHeader>
                     <FileText className="h-10 w-10 text-accent-maroon mb-2" />
-                    <CardTitle>Transparent Reporting</CardTitle>
+                    <CardTitle className="text-white">
+                      Transparent Reporting
+                    </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-300">
                       Detailed reports on income, expenses, and client details.
                     </p>
                   </CardContent>
@@ -116,13 +116,15 @@ export function Benefits() {
               </motion.div>
 
               <motion.div variants={item}>
-                <Card>
+                <Card className="bg-gray-800 border-gray-700 hover:border-gray-600 transition-colors">
                   <CardHeader>
                     <Shield className="h-10 w-10 text-accent-burgundy mb-2" />
-                    <CardTitle>Insurance Protection</CardTitle>
+                    <CardTitle className="text-white">
+                      Insurance Protection
+                    </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-300">
                       Comprehensive coverage with our assistance for claims.
                     </p>
                   </CardContent>
@@ -130,13 +132,13 @@ export function Benefits() {
               </motion.div>
 
               <motion.div variants={item}>
-                <Card>
+                <Card className="bg-gray-800 border-gray-700 hover:border-gray-600 transition-colors">
                   <CardHeader>
                     <TrendingUp className="h-10 w-10 text-accent-coral mb-2" />
-                    <CardTitle>Passive Income</CardTitle>
+                    <CardTitle className="text-white">Passive Income</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-300">
                       Steady earnings without active involvement in daily
                       operations.
                     </p>
@@ -145,13 +147,13 @@ export function Benefits() {
               </motion.div>
 
               <motion.div variants={item}>
-                <Card>
+                <Card className="bg-gray-800 border-gray-700 hover:border-gray-600 transition-colors">
                   <CardHeader>
                     <CheckCircle className="h-10 w-10 text-accent-dusty mb-2" />
-                    <CardTitle>Peace of Mind</CardTitle>
+                    <CardTitle className="text-white">Peace of Mind</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-300">
                       Professional management ensures your car is
                       well-maintained.
                     </p>
@@ -168,12 +170,14 @@ export function Benefits() {
             variants={item}
           >
             <motion.div variants={item}>
-              <Card className="max-w-4xl mx-auto">
+              <Card className="max-w-4xl mx-auto bg-gray-800 border-gray-700">
                 <CardHeader>
-                  <CardTitle>Why Choose Breck’s Car Rental?</CardTitle>
+                  <CardTitle className="text-white">
+                    Why Choose Breck&apos;s Car Rental?
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-4 text-gray-600 dark:text-gray-300">
+                  <ul className="space-y-4 text-gray-300">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-accent-blue mt-1 flex-shrink-0" />
                       <span>

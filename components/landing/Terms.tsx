@@ -29,20 +29,20 @@ export function Terms() {
 
   return (
     <motion.section
-      className="py-16 px-4 bg-gray-50 dark:bg-gray-800"
+      className="py-16 px-4 bg-gray-800"
       initial="hidden"
       whileInView="show"
       viewport={defaultViewport}
       variants={container}
     >
       <div className="max-w-4xl mx-auto">
-        <motion.div variants={item} className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
-            Terms & Agreement
+        <motion.div variants={item} className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
+            Terms and Conditions
           </h2>
-          <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Key terms of the Vehicle Partnership Program. Full agreement
-            available upon request.
+          <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto">
+            Please read these terms carefully before participating in our
+            vehicle partnership program
           </p>
         </motion.div>
 
@@ -72,11 +72,9 @@ export function Terms() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-6 pt-0">
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Owner receives 75% of net rental income. Operator receives
-                      25% as service/management fee. Delivery driver fee (₱200)
-                      and actual delivery expenses may be deducted from
-                      Owner&apos;s share.
+                    <p className="text-gray-300">
+                      Revenue sharing is calculated monthly based on actual
+                      rental income, minus operational costs.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
@@ -92,12 +90,9 @@ export function Terms() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-6 pt-0">
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Routine maintenance (oil change, preventive servicing) is
-                      Owner&apos;s expense. Operator monitors condition and
-                      reports issues. Repairs due to normal wear and tear are
-                      Owner&apos;s responsibility. Client negligence, accidents,
-                      or misuse are charged to the client.
+                    <p className="text-gray-300">
+                      Vehicle owners are responsible for maintaining their
+                      vehicles according to our maintenance schedule.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
@@ -113,12 +108,9 @@ export function Terms() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-6 pt-0">
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Operator exercises due diligence in screening clients.
-                      Clients are liable for damages, traffic violations,
-                      accidents, or loss of accessories. In case of accidents,
-                      Owner and Operator cooperate in pursuing claims against
-                      the client or insurer.
+                    <p className="text-gray-300">
+                      We reserve the right to terminate partnerships for
+                      violations of terms or quality standards.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
@@ -134,7 +126,7 @@ export function Terms() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-6 pt-0">
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-300">
                       Any traffic violations, including NCAP, incurred during
                       client use are the client&apos;s full responsibility.
                       Breck&apos;s maintains a system record of violators for
@@ -154,7 +146,7 @@ export function Terms() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-6 pt-0">
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-300">
                       Client is fully liable for replacement value based on fair
                       market value. If covered by insurance, claims processed
                       immediately. Client shoulders participation fees,
@@ -174,7 +166,7 @@ export function Terms() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-6 pt-0">
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-300">
                       Agreement valid for 1 year from execution, automatically
                       renewed unless 30 days&apos; written notice of
                       termination. Either party may terminate with 30 days&apos;
@@ -197,7 +189,7 @@ export function Terms() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-6 pt-0">
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-300">
                       Both parties keep business, client, and financial
                       information confidential during agreement and for 2 years
                       after termination.

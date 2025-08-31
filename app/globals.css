@@ -98,42 +98,6 @@
   --sidebar-ring: rgba(255, 255, 255, 0.06);
 }
 
-/* Light theme override — add data-theme="light" on <html> or <body> to switch */
-[data-theme="light"] {
-  --background: #ffffff;
-  --foreground: #0a0b1d;
-  --card: #ffffff;
-  --card-foreground: #0a0b1d;
-  --popover: #ffffff;
-  --popover-foreground: #0a0b1d;
-
-  --primary: var(--color-accent-blue);
-  --primary-foreground: #ffffff;
-  --secondary: var(--color-accent-coral);
-  --secondary-foreground: #ffffff;
-  --accent: var(--color-accent-coral);
-  --accent-foreground: #ffffff;
-  --destructive: var(--color-accent-maroon);
-
-  --muted: rgba(10, 11, 29, 0.06);
-  --muted-foreground: rgba(10, 11, 29, 0.5);
-  --border: rgba(10, 11, 29, 0.08);
-  --input: rgba(10, 11, 29, 0.04);
-  --ring: rgba(10, 11, 29, 0.06);
-
-  --chart-1: var(--color-cta-orange);
-  --chart-2: var(--color-accent-coral);
-  --chart-3: var(--color-accent-blue);
-  --chart-4: var(--color-accent-maroon);
-  --chart-5: var(--color-accent-dusty);
-
-  --sidebar: #f8fafc;
-  --sidebar-foreground: #0a0b1d;
-  --sidebar-primary: var(--color-accent-blue);
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: var(--color-accent-coral);
-  --sidebar-accent-foreground: #ffffff;
-}
 @layer base {
   * {
     box-sizing: border-box;

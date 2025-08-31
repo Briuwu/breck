@@ -15,7 +15,7 @@ export function PartnershipModel() {
 
   return (
     <motion.section
-      className="py-16 px-4 bg-gray-50 dark:bg-gray-800"
+      className="py-16 px-4 bg-gray-800"
       initial="hidden"
       whileInView="show"
       viewport={defaultViewport}
@@ -23,12 +23,12 @@ export function PartnershipModel() {
     >
       <div className="max-w-6xl mx-auto">
         <motion.div variants={item} className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            How the Partnership Works
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Our Partnership Model
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            A simple, transparent process to turn your car into a passive income
-            stream.
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+            A transparent and mutually beneficial approach to vehicle rental
+            partnerships
           </p>
         </motion.div>
 
@@ -78,7 +78,7 @@ export function PartnershipModel() {
                     75%
                   </div>
                   <p className="text-lg font-semibold">Owner&apos;s Share</p>
-                  <p className="text-gray-600 dark:text-gray-300">
+                  <p className="text-gray-300">
                     Net rental income after deductions (e.g., delivery fees).
                   </p>
                 </div>
@@ -87,14 +87,14 @@ export function PartnershipModel() {
                     25%
                   </div>
                   <p className="text-lg font-semibold">Operator&apos;s Share</p>
-                  <p className="text-gray-600 dark:text-gray-300">
+                  <p className="text-gray-300">
                     Management/service fee for handling operations.
                   </p>
                 </div>
               </div>
-              <p className="mt-6 text-center text-gray-700 dark:text-gray-200">
-                We market, manage, and handle rentals. Clients pay rental +
-                delivery + fuel/toll fees. Income is shared transparently.
+              <p className="mt-6 text-center text-gray-200">
+                We handle all the operational aspects while you earn passive
+                income from your vehicle.
               </p>
             </CardContent>
           </Card>

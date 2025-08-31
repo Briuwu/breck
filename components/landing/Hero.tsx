@@ -10,7 +10,7 @@ import {
   buttonInteraction,
 } from "@/lib/motionVariants";
 import TextEffect from "@/components/ui/text-effect";
-import Image from "next/image";
+// ...existing code...
 
 export function Hero() {
   const container = createContainer();
@@ -28,15 +28,16 @@ export function Hero() {
         <div className="max-w-4xl mx-auto py-20 md:py-32 px-4 z-20">
           <motion.div variants={item} className="text-left">
             <div className="flex items-center mb-4">
-              <Car className="h-10 w-10 text-accent-blue dark:text-accent-coral mr-3" />
-              <span className="text-sm text-gray-500 dark:text-gray-400">
+              <Car className="h-10 w-10 text-accent-blue mr-3" />
+              <span className="text-sm" style={{ color: "var(--muted-foreground)" }}>
                 Breck Partnership
               </span>
             </div>
 
             <motion.h1
               variants={item}
-              className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4"
+              className="text-3xl md:text-5xl font-bold mb-4"
+              style={{ color: "var(--foreground)" }}
             >
               <TextEffect per="char" className="inline-block">
                 Earn Passive Income with Your Car
@@ -45,7 +46,8 @@ export function Hero() {
 
             <motion.p
               variants={item}
-              className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-6 max-w-2xl"
+              className="text-lg md:text-xl mb-6 max-w-2xl"
+              style={{ color: "var(--muted-foreground)" }}
             >
               Join Breck’s Car Rental Vehicle Partnership Program. Share 75% of
               net rental income while we handle the rest—transparently and
@@ -78,7 +80,7 @@ export function Hero() {
         </div>
       </div>
       {/* subtle gradient to blend image */}
-      <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-transparent to-transparent dark:from-black/60 mix-blend-multiply pointer-events-none z-10 hidden md:block" />
+      <div className="absolute inset-0 bg-gradient-to-r via-transparent to-transparent from-black/60 mix-blend-multiply pointer-events-none z-10 hidden md:block" />
     </motion.section>
   );
 }

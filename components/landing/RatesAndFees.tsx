@@ -23,20 +23,19 @@ export function RatesAndFees() {
 
   return (
     <motion.section
-      className="py-16 px-4 bg-gray-50 dark:bg-gray-800"
+      className="py-16 px-4 bg-gray-800"
       initial="hidden"
       whileInView="show"
       viewport={defaultViewport}
       variants={container}
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <motion.div variants={item} className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Rental Rates & Fees
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Rates and Fees
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Competitive pricing with flexible options. Final rates may vary
-            based on client needs.
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+            Transparent pricing structure for our vehicle partnership program
           </p>
         </motion.div>
 
@@ -68,9 +67,8 @@ export function RatesAndFees() {
                   </TableRow>
                 </TableBody>
               </Table>
-              <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
-                * Rates are for standard sedan. Luxury or SUV vehicles may have
-                different pricing.
+              <p className="mt-4 text-sm text-gray-300">
+                *Rates may vary based on vehicle type, location, and demand
               </p>
             </CardContent>
           </Card>
@@ -84,7 +82,7 @@ export function RatesAndFees() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-3 text-gray-600 dark:text-gray-300">
+              <ul className="space-y-3 text-gray-300">
                 <li className="flex justify-between">
                   <span>Extended Hours</span>
                   <span>₱200/hour</span>
@@ -120,7 +118,7 @@ export function RatesAndFees() {
                 <div className="text-center">
                   <Fuel className="h-12 w-12 text-accent-blue mx-auto mb-4" />
                   <h3 className="font-semibold mb-2">Fuel</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">
+                  <p className="text-sm text-gray-300">
                     Clients cover all fuel costs. Return with full tank or pay
                     difference.
                   </p>
@@ -128,14 +126,14 @@ export function RatesAndFees() {
                 <div className="text-center">
                   <MapPin className="h-12 w-12 text-accent-coral mx-auto mb-4" />
                   <h3 className="font-semibold mb-2">Toll Fees</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">
+                  <p className="text-sm text-gray-300">
                     All toll fees are the responsibility of the client.
                   </p>
                 </div>
                 <div className="text-center">
                   <Clock className="h-12 w-12 text-accent-maroon mx-auto mb-4" />
                   <h3 className="font-semibold mb-2">Delivery Fee</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">
+                  <p className="text-sm text-gray-300">
                     ₱300–₱500 depending on distance, paid by client.
                   </p>
                 </div>

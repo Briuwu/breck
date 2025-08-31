@@ -62,20 +62,20 @@ export function Contact() {
 
   return (
     <motion.section
-      className="py-16 px-4 bg-gray-50 dark:bg-gray-800"
+      className="py-16 px-4 bg-gray-800"
       initial="hidden"
       whileInView="show"
       viewport={defaultViewport}
       variants={container}
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <motion.div variants={item} className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Get Started Today
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Get in Touch
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Ready to join Breck&apos;s Vehicle Partnership Program? Contact us
-            to learn more and get started.
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+            Ready to start earning passive income? Contact us to learn more
+            about our vehicle partnership program.
           </p>
         </motion.div>
 
@@ -90,9 +90,7 @@ export function Contact() {
                 <Mail className="h-4 w-4 text-accent-blue" />
                 <div>
                   <p className="font-semibold">Email</p>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    info@breckscarental.com
-                  </p>
+                  <p className="text-gray-300">info@breckscarental.com</p>
                 </div>
               </div>
 
@@ -100,9 +98,7 @@ export function Contact() {
                 <Phone className="h-4 w-4 text-accent-coral" />
                 <div>
                   <p className="font-semibold">Phone</p>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    +63 912 345 6789
-                  </p>
+                  <p className="text-gray-300">+63 912 345 6789</p>
                 </div>
               </div>
 
@@ -110,14 +106,14 @@ export function Contact() {
                 <MapPin className="h-4 w-4 text-accent-maroon" />
                 <div>
                   <p className="font-semibold">Office Address</p>
-                  <p className="text-gray-600 dark:text-gray-300">
+                  <p className="text-gray-300">
                     123 Business District, Makati City, Philippines
                   </p>
                 </div>
               </div>
 
               <div className="pt-4">
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-sm text-gray-400">
                   <strong>Business Hours:</strong> Monday - Friday, 9:00 AM -
                   6:00 PM
                 </p>
@@ -211,8 +207,8 @@ export function Contact() {
               </Form>
 
               {isSubmitted && (
-                <div className="mt-4 p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
-                  <p className="text-green-800 dark:text-green-200 text-center">
+                <div className="mt-4 p-4 bg-green-900/20 rounded-lg">
+                  <p className="text-green-200 text-center">
                     Thank you for your message! We&apos;ll get back to you
                     within 24 hours.
                   </p>

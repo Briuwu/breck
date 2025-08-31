@@ -53,7 +53,7 @@ export function Computations() {
 
   return (
     <motion.section
-      className="py-16 px-4 bg-white dark:bg-gray-900"
+      className="py-16 px-4 bg-gray-900"
       initial="hidden"
       whileInView="show"
       viewport={defaultViewport}
@@ -61,12 +61,12 @@ export function Computations() {
     >
       <div className="max-w-6xl mx-auto">
         <motion.div variants={item} className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Sample Income Computations
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Revenue Computation Examples
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            See potential earnings based on rental days. Based on standard sedan
-            rates.
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+            See how much you can earn with different vehicle types and rental
+            durations
           </p>
         </motion.div>
 
@@ -109,9 +109,7 @@ export function Computations() {
               </CardHeader>
               <CardContent className="text-center">
                 <div className="space-y-2">
-                  <p className="text-sm text-gray-600 dark:text-gray-300">
-                    Gross Income
-                  </p>
+                  <p className="text-sm text-gray-300">Gross Income</p>
                   <p className="text-2xl font-bold text-blue-600">
                     ₱
                     <AnimatedNumber
@@ -119,9 +117,7 @@ export function Computations() {
                       format={(v) => `${Math.round(v).toLocaleString()}`}
                     />
                   </p>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">
-                    Delivery Fees
-                  </p>
+                  <p className="text-sm text-gray-300">Delivery Fees</p>
                   <p className="text-lg text-red-600">
                     -₱
                     <AnimatedNumber
@@ -129,9 +125,7 @@ export function Computations() {
                       format={(v) => `${Math.round(v).toLocaleString()}`}
                     />
                   </p>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">
-                    Net Income
-                  </p>
+                  <p className="text-sm text-gray-300">Net Income</p>
                   <p className="text-xl font-semibold text-green-600">
                     ₱
                     <AnimatedNumber
@@ -139,9 +133,7 @@ export function Computations() {
                       format={(v) => `${Math.round(v).toLocaleString()}`}
                     />
                   </p>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">
-                    Owner Share
-                  </p>
+                  <p className="text-sm text-gray-300">Owner Share</p>
                   <p className="text-xl font-bold text-yellow-600">
                     ₱
                     <AnimatedNumber
@@ -156,9 +148,9 @@ export function Computations() {
         </motion.div>
 
         <motion.div variants={item}>
-          <p className="mt-8 text-center text-sm text-gray-500 dark:text-gray-400">
-            * Computations based on ₱2,000/day average. Actual earnings may vary
-            based on vehicle type, location, and demand.
+          <p className="mt-8 text-center text-sm text-gray-400">
+            *All computations are estimates based on current market rates and
+            average occupancy. Actual earnings may vary.
           </p>
         </motion.div>
       </div>
