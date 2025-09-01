@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Car, DollarSign } from "lucide-react";
+import { Car, Coins } from "lucide-react";
 import { motion } from "motion/react";
 import {
   createContainer,
@@ -62,7 +62,7 @@ export function Hero() {
                 size="lg"
                 className="bg-(--color-cta-orange) hover:bg-(--color-accent-dusty) text-(--color-text-light) px-8 py-3"
               >
-                <DollarSign className="mr-2 h-5 w-5" />
+                <Coins className="mr-2 h-5 w-5" />
                 Learn More
               </Button>
 

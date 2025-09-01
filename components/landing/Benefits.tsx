@@ -3,7 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
-  DollarSign,
+  Coins,
   Shield,
   FileText,
   TrendingUp,
@@ -69,7 +69,7 @@ export function Benefits() {
               <motion.div variants={item}>
                 <Card className="bg-gray-800 border-gray-700 hover:border-gray-600 transition-colors">
                   <CardHeader>
-                    <DollarSign className="h-10 w-10 text-cta-orange mb-2" />
+                    <Coins className="h-10 w-10 text-cta-orange mb-2" />
                     <CardTitle className="text-white">
                       75% Income Share
                     </CardTitle>

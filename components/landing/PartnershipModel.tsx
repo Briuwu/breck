@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, DollarSign, Car, Users, FileText } from "lucide-react";
+import { ArrowRight, Coins, Car, Users, FileText } from "lucide-react";
 import { motion } from "motion/react";
 import {
   createContainer,
@@ -53,7 +53,7 @@ export function PartnershipModel() {
           </div>
           <ArrowRight className="h-6 w-6 text-gray-400" />
           <div className="flex items-center gap-2">
-            <DollarSign className="h-8 w-8 text-cta-orange" />
+            <Coins className="h-8 w-8 text-cta-orange" />
             <span className="text-lg font-semibold">Income Sharing</span>
           </div>
           <ArrowRight className="h-6 w-6 text-gray-400" />

@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/accordion";
 import {
   FileText,
-  DollarSign,
+  Coins,
   Shield,
   AlertTriangle,
   Wrench,
@@ -64,7 +64,7 @@ export function Terms() {
                   <AccordionTrigger className="w-full px-6 py-4">
                     <div className="flex items-center justify-between w-full">
                       <div className="flex items-center gap-3">
-                        <DollarSign className="h-5 w-5 text-accent-blue" />
+                        <Coins className="h-5 w-5 text-accent-blue" />
                         <span className="text-left text-sm md:text-base">
                           Revenue Sharing
                         </span>
