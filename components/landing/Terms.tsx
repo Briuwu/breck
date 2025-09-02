@@ -29,6 +29,7 @@ export function Terms() {
 
   return (
     <motion.section
+      id="terms"
       className="py-16 px-4 bg-gray-800"
       initial="hidden"
       whileInView="show"

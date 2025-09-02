@@ -1,8 +1,9 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Car, Coins } from "lucide-react";
+import { Coins } from "lucide-react";
 import { motion } from "motion/react";
+import Image from "next/image";
 import {
   createContainer,
   createItem,
@@ -18,7 +19,8 @@ export function Hero() {
 
   return (
     <motion.section
-      className="flex flex-col items-center justify-center min-h-screen pr-4 text-center"
+      id="hero"
+      className="flex flex-col items-center justify-center min-h-screen pr-4 text-center pt-20"
       initial="hidden"
       whileInView="show"
       viewport={defaultViewport}
@@ -28,8 +30,17 @@ export function Hero() {
         <div className="max-w-4xl mx-auto py-20 md:py-32 px-4 z-20">
           <motion.div variants={item} className="text-left">
             <div className="flex items-center mb-4">
-              <Car className="h-10 w-10 text-accent-blue mr-3" />
-              <span className="text-sm" style={{ color: "var(--muted-foreground)" }}>
+              <Image
+                src="/breck-logo.png"
+                alt="Breck Car Rental Logo"
+                width={40}
+                height={40}
+                className="mr-3"
+              />
+              <span
+                className="text-sm"
+                style={{ color: "var(--muted-foreground)" }}
+              >
                 Breck Partnership
               </span>
             </div>

@@ -15,6 +15,7 @@ export function PartnershipModel() {
 
   return (
     <motion.section
+      id="partnership"
       className="py-16 px-4 bg-gray-800"
       initial="hidden"
       whileInView="show"

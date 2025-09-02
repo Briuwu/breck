@@ -17,6 +17,7 @@ export function About() {
 
   return (
     <motion.section
+      id="about"
       className="py-16 px-4bg-gray-900"
       initial="hidden"
       whileInView="show"

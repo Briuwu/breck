@@ -16,6 +16,7 @@ export function Legal() {
 
   return (
     <motion.section
+      id="legal"
       className="py-16 px-4 bg-gray-900"
       initial="hidden"
       whileInView="show"

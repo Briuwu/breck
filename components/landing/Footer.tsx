@@ -1,15 +1,9 @@
 "use client";
 
 import { Separator } from "@/components/ui/separator";
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Facebook,
-  Twitter,
-  Instagram,
-} from "lucide-react";
+import { Mail, Phone, MapPin, Facebook } from "lucide-react";
 import { motion } from "motion/react";
+import Image from "next/image";
 import {
   createContainer,
   createItem,
@@ -32,7 +26,16 @@ export function Footer() {
         <motion.div variants={item} className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">Breck’s Car Rental</h3>
+            <div className="flex items-center mb-4">
+              <Image
+                src="/breck-logo.png"
+                alt="Breck Car Rental Logo"
+                width={32}
+                height={32}
+                className="mr-3"
+              />
+              <h3 className="text-2xl font-bold">Breck&apos;s Car Rental</h3>
+            </div>
             <p className="text-gray-300 mb-4">
               Providing reliable, affordable, and transparent car rental
               services in the Philippines. Join our Vehicle Partnership Program
@@ -40,22 +43,12 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
-                className="text-gray-400 hover:text-accent-blue transition-colors"
+                href="https://www.facebook.com/share/1CH5WRe36k/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-blue-500 transition-colors"
               >
                 <Facebook className="h-6 w-6" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-accent-coral transition-colors"
-              >
-                <Twitter className="h-6 w-6" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-accent-maroon transition-colors"
-              >
-                <Instagram className="h-6 w-6" />
               </a>
             </div>
           </div>
@@ -104,15 +97,23 @@ export function Footer() {
             <div className="space-y-3 text-gray-300">
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-accent-blue" />
-                <span>info@breckscarental.com</span>
+                <a
+                  href="mailto:Breckscarrental@gmail.com"
+                  className="hover:text-white transition-colors"
+                >
+                  Breckscarrental@gmail.com
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-accent-coral" />
-                <span>+63 912 345 6789</span>
+                <span>(0997) 804 5821</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-accent-maroon" />
-                <span>123 Business District, Makati City, Philippines</span>
+                <span>
+                  Blk1 Lot3 Alley 16 Phase 2A Grand Riverside Subdivision Brgy.
+                  Pasong Camachile I General Trias Cavite 4107
+                </span>
               </div>
             </div>
           </div>
@@ -124,7 +125,7 @@ export function Footer() {
           variants={item}
           className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm"
         >
-          <p>&copy; 2025 Breck’s Car Rental. All rights reserved.</p>
+          <p>&copy; 2025 Breck&apos;s Car Rental. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">
               Privacy Policy

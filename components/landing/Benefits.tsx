@@ -27,6 +27,7 @@ export function Benefits() {
 
   return (
     <motion.section
+      id="benefits"
       className="py-16 px-4 bg-gray-900"
       initial="hidden"
       whileInView="show"
