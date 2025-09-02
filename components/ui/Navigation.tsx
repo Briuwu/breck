@@ -5,6 +5,16 @@ import { motion, AnimatePresence } from "motion/react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
+import { cn } from "@/lib/utils";
 
 const navigationItems = [
   { name: "Home", href: "#hero" },
@@ -13,10 +23,15 @@ const navigationItems = [
   { name: "Benefits", href: "#benefits" },
   { name: "Rates", href: "#rates" },
   { name: "Computations", href: "#computations" },
+  { name: "Requirements", href: "#requirements" },
   { name: "Terms", href: "#terms" },
   { name: "Legal", href: "#legal" },
   { name: "Contact", href: "#contact" },
 ];
+
+// Group navigation items for better organization
+const mainNavItems = navigationItems.slice(0, 6);
+const infoNavItems = navigationItems.slice(6);
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -109,21 +124,64 @@ export function Navigation() {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-1">
-            {navigationItems.map((item) => (
-              <Button
-                key={item.name}
-                variant="ghost"
-                className={`px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg ${
-                  activeSection === item.href.substring(1)
-                    ? "text-white bg-blue-600 shadow-lg hover:bg-blue-700"
-                    : "text-gray-300 hover:text-white hover:bg-white/10"
-                }`}
-                onClick={() => scrollToSection(item.href)}
-              >
-                {item.name}
-              </Button>
-            ))}
+          <div className="hidden lg:flex items-center">
+            <NavigationMenu viewport={false}>
+              <NavigationMenuList className="flex items-center space-x-1">
+                {/* Main Navigation Items */}
+                {mainNavItems.map((item) => (
+                  <NavigationMenuItem key={item.name}>
+                    <NavigationMenuLink
+                      className={cn(
+                        navigationMenuTriggerStyle(),
+                        "bg-transparent text-gray-300 hover:text-white hover:bg-white/10 px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg h-10 flex items-center",
+                        activeSection === item.href.substring(1) &&
+                          "text-white bg-blue-600 shadow-lg hover:bg-blue-700"
+                      )}
+                      onClick={() => scrollToSection(item.href)}
+                    >
+                      {item.name}
+                    </NavigationMenuLink>
+                  </NavigationMenuItem>
+                ))}
+
+                {/* Information Dropdown */}
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="bg-transparent text-gray-300 hover:text-white hover:bg-white/10 px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg h-10 data-[state=open]:bg-white/10">
+                    More Info
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className="absolute top-full mt-2 z-50">
+                    <div className="grid w-[280px] gap-2 p-4 bg-gray-900/95 backdrop-blur-lg border border-gray-700/50 rounded-lg shadow-xl">
+                      {infoNavItems.map((item) => (
+                        <NavigationMenuLink
+                          key={item.name}
+                          className={cn(
+                            "block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-white cursor-pointer",
+                            activeSection === item.href.substring(1)
+                              ? "bg-blue-600 text-white"
+                              : "text-gray-300"
+                          )}
+                          onClick={() => scrollToSection(item.href)}
+                        >
+                          <div className="text-sm font-medium leading-none">
+                            {item.name}
+                          </div>
+                          <p className="line-clamp-2 text-xs leading-snug text-gray-400 mt-1">
+                            {item.name === "Requirements" &&
+                              "Partnership eligibility criteria"}
+                            {item.name === "Terms" &&
+                              "Service terms and conditions"}
+                            {item.name === "Legal" &&
+                              "Legal information and policies"}
+                            {item.name === "Contact" &&
+                              "Get in touch with our team"}
+                          </p>
+                        </NavigationMenuLink>
+                      ))}
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
           </div>
 
           {/* Contact CTA Button */}

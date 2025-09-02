@@ -5,6 +5,7 @@ import { Benefits } from "@/components/landing/Benefits";
 import ClientGallery from "@/components/landing/ClientGallery";
 import { RatesAndFees } from "@/components/landing/RatesAndFees";
 import { Computations } from "@/components/landing/Computations";
+import { OwnerRequirements } from "@/components/landing/OwnerRequirements";
 import { Terms } from "@/components/landing/Terms";
 import { Legal } from "@/components/landing/Legal";
 import { Contact } from "@/components/landing/Contact";
@@ -21,6 +22,7 @@ export default function Home() {
       <ClientGallery />
       <RatesAndFees />
       <Computations />
+      <OwnerRequirements />
       <Terms />
       <Legal />
       <Contact />

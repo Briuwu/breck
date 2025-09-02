@@ -13,6 +13,17 @@ This proposal outlines the terms, responsibilities, and benefits of entering int
 
 Partnership Terms & Agreement
 
+Owner Requirements
+
+To proceed with the vehicle partnership, owners are required to provide the following:
+
+- Two (2) valid government-issued IDs
+- Proof of billing (recent, under owner's name)
+- Three (3) clear photocopies of OR/CR (Official Receipt & Certificate of Registration)
+- Updated insurance (comprehensive)
+- Dashcam (optional but recommended)
+- GPS devices – must be installed by Breck's Car Rental trusted partner
+
 1. Revenue Sharing
 
 Owner: 75% of net rental income
