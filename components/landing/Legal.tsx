@@ -76,9 +76,9 @@ export function Legal() {
             </CardHeader>
             <CardContent>
               <p className="text-gray-300 mb-4">
-                Owner shall issue an SPA to Maria Leonela M. Lasala authorizing
-                representation before government authorities in matters relating
-                to the vehicle.
+                Owner shall issue an SPA to brecks car rental representative
+                authorizing representation before government authorities in
+                matters relating to the vehicle.
               </p>
               <div className="bg-yellow-900/20 p-4 rounded-lg">
                 <p className="text-sm text-yellow-200">

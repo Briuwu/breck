@@ -183,7 +183,7 @@ export function Hero() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="px-8 py-4 text-lg font-semibold rounded-xl border-2 border-white/30 text-white bg-white/10 backdrop-blur-sm hover:bg-white/20 hover:border-white/50 transition-all duration-300"
+                  className="px-8 py-4 w-full text-lg font-semibold rounded-xl border-2 border-white/30 text-white bg-white/10 backdrop-blur-sm hover:bg-white/20 hover:border-white/50 transition-all duration-300"
                   onClick={() => {
                     const contactSection = document.getElementById("contact");
                     if (contactSection) {

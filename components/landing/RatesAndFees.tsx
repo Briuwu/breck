@@ -24,32 +24,44 @@ export function RatesAndFees() {
   return (
     <motion.section
       id="rates"
-      className="py-16 px-4 bg-gray-800"
+      className="relative py-16 px-4 lg:px-8 overflow-hidden"
       initial="hidden"
       whileInView="show"
       viewport={defaultViewport}
       variants={container}
     >
-      <div className="max-w-4xl mx-auto">
-        <motion.div variants={item} className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      {/* subtle background accents */}
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <div className="absolute -top-12 left-8 w-72 h-72 rounded-full bg-accent-blue/6 blur-3xl" />
+        <div className="absolute bottom-0 right-12 w-80 h-48 rounded-2xl bg-accent-maroon/6 blur-2xl" />
+      </div>
+
+      <div className="max-w-6xl mx-auto">
+        <motion.div variants={item} className="mb-12 text-center">
+          <div className="inline-flex items-center gap-3 mb-4">
+            <span className="px-3 py-1 rounded-full bg-white/6 text-sm font-medium text-foreground border border-white/6">
+              Rates
+            </span>
+          </div>
+
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Rates and Fees
           </h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Transparent pricing structure for our vehicle partnership program
           </p>
         </motion.div>
 
         <motion.div variants={item} className="grid md:grid-cols-2 gap-8">
           {/* Standard Rates */}
-          <Card>
+          <Card className="h-full flex flex-col bg-white/6 border border-white/10">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
+              <CardTitle className="flex items-center gap-2 text-foreground">
                 <Clock className="h-6 w-6 text-accent-blue" />
                 Standard Rates
               </CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex-1">
               <Table>
                 <TableHeader>
                   <TableRow>
@@ -68,22 +80,22 @@ export function RatesAndFees() {
                   </TableRow>
                 </TableBody>
               </Table>
-              <p className="mt-4 text-sm text-gray-300">
+              <p className="mt-4 text-sm text-muted-foreground">
                 *Rates may vary based on vehicle type, location, and demand
               </p>
             </CardContent>
           </Card>
 
           {/* Additional Charges */}
-          <Card>
+          <Card className="h-full flex flex-col bg-white/6 border border-white/10">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
+              <CardTitle className="flex items-center gap-2 text-foreground">
                 <MapPin className="h-6 w-6 text-accent-maroon" />
                 Additional Charges
               </CardTitle>
             </CardHeader>
-            <CardContent>
-              <ul className="space-y-3 text-gray-300">
+            <CardContent className="flex-1">
+              <ul className="space-y-3 text-muted-foreground">
                 <li className="flex justify-between">
                   <span>Extended Hours</span>
                   <span>₱200/hour</span>
@@ -107,10 +119,10 @@ export function RatesAndFees() {
 
         {/* Client Responsibilities */}
         <motion.div variants={item}>
-          <Card className="mt-8">
+          <Card className="mt-8 bg-white/6 border border-white/10">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Fuel className="h-6 w-6" />
+              <CardTitle className="flex items-center gap-2 text-foreground">
+                <Fuel className="h-6 w-6 text-accent-blue" />
                 Client Responsibilities
               </CardTitle>
             </CardHeader>
@@ -118,23 +130,27 @@ export function RatesAndFees() {
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="text-center">
                   <Fuel className="h-12 w-12 text-accent-blue mx-auto mb-4" />
-                  <h3 className="font-semibold mb-2">Fuel</h3>
-                  <p className="text-sm text-gray-300">
+                  <h3 className="font-semibold text-foreground mb-2">Fuel</h3>
+                  <p className="text-sm text-muted-foreground">
                     Clients cover all fuel costs. Return with full tank or pay
                     difference.
                   </p>
                 </div>
                 <div className="text-center">
                   <MapPin className="h-12 w-12 text-accent-coral mx-auto mb-4" />
-                  <h3 className="font-semibold mb-2">Toll Fees</h3>
-                  <p className="text-sm text-gray-300">
+                  <h3 className="font-semibold text-foreground mb-2">
+                    Toll Fees
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
                     All toll fees are the responsibility of the client.
                   </p>
                 </div>
                 <div className="text-center">
                   <Clock className="h-12 w-12 text-accent-maroon mx-auto mb-4" />
-                  <h3 className="font-semibold mb-2">Delivery Fee</h3>
-                  <p className="text-sm text-gray-300">
+                  <h3 className="font-semibold text-foreground mb-2">
+                    Delivery Fee
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
                     ₱300–₱500 depending on distance, paid by client.
                   </p>
                 </div>
