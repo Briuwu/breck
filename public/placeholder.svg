@@ -1,0 +1,11 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f3f4f6"/>
+  <g opacity="0.4">
+    <path d="M200 120c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zm0 32c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z" fill="#9ca3af"/>
+    <path d="M120 80h160c8.8 0 16 7.2 16 16v108c0 8.8-7.2 16-16 16H120c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16zm0 16v108h160V96H120z" fill="#9ca3af"/>
+    <path d="M154 180l26-26 20 20 40-40 40 40v30H154v-24z" fill="#9ca3af"/>
+  </g>
+  <text x="200" y="230" text-anchor="middle" fill="#6b7280" font-family="system-ui" font-size="14" font-weight="500">
+    Client Image
+  </text>
+</svg>

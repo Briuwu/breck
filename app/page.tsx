@@ -2,6 +2,7 @@ import { Hero } from "@/components/landing/Hero";
 import { About } from "@/components/landing/About";
 import { PartnershipModel } from "@/components/landing/PartnershipModel";
 import { Benefits } from "@/components/landing/Benefits";
+import ClientGallery from "@/components/landing/ClientGallery";
 import { RatesAndFees } from "@/components/landing/RatesAndFees";
 import { Computations } from "@/components/landing/Computations";
 import { Terms } from "@/components/landing/Terms";
@@ -17,6 +18,7 @@ export default function Home() {
       <About />
       <PartnershipModel />
       <Benefits />
+      <ClientGallery />
       <RatesAndFees />
       <Computations />
       <Terms />
